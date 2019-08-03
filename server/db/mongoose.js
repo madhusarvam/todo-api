@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MongoDB_URL || 'mongodb://localhost:27017/TodoApp',{ useNewUrlParser: true });
+mongoose.connect('mongodb://madhusarvam:Amma@1191@ds01316.mlab.com:1316/todos',{ useNewUrlParser: true });
 
 module.exports = {
   mongoose : mongoose
